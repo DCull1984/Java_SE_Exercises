@@ -1,4 +1,4 @@
-package javaExe4;
+package javaReturnStr;
 
 public class Main {
 	

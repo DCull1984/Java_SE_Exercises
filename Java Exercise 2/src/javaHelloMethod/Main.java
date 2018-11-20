@@ -1,4 +1,4 @@
-package javeExe2;
+package javaHelloMethod;
 
 public class Main {
 

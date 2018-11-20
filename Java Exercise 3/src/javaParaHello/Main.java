@@ -1,4 +1,4 @@
-package javaExe3;
+package javaParaHello;
 
 public class Main {
 
