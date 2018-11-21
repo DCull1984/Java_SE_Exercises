@@ -5,30 +5,7 @@ import java.util.Random;
 
 public class Main 
 {
-	/*public static void input()
-	{
-		Scanner control = new Scanner(System.in);
 		
-	}
-	
-	public static int gridSizeX()
-	{
-		
-		System.out.print("Enter Grid Width: ");
-		int gridX = control.nextInt();
-		
-		return gridX;		
-	}
-	
-	public static int gridSizeY()
-	{
-		
-		System.out.print("Enter Grid Height: ");
-		int gridY = control.nextInt();
-		
-	}*/
-	
-	
 	public static void main(String[] args) 
 	{
 		Scanner control = new Scanner(System.in);

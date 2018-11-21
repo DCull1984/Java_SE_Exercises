@@ -6,28 +6,39 @@ public class Main
 	public static int BlackJack(int a, int b)
 	{
 		
-		if (a > b && a <= 21)
+		if (a > b)
 		{
+			if (a >= 22)
+			{
+				return b;
+			}
 			return a;
 		}
 		
-		if (a < b && b <= 21)
+		else if (a < b)
 		{
+			if (b >= 22)
+			{
+				return a;
+			}
 			return b;
 		}
 		
-		if (a == b)
+		else if  (a >= 21 && b >= 21)
 		{
 			return 0;
 		}
 		
-		
+		else
+		{
+			return -1;
+		}
 				
 	}
 	
 	public static void main(String[] args) 
 	{
-		System.out.println(BlackJack(22, 18));
+		System.out.println(BlackJack(21, 21));
 	}
 
 }
