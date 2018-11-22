@@ -3,28 +3,28 @@ package javaGarage;
 public class Van extends Vehicle
 {
 	/////////Attributes//////////
-	protected String totalCapacity;
+	protected String type;
 	
 	
 	/////////Constructors//////////
 	Van(int vWheels, int vWeight, String vMake, String vModel, 
-			String vColour, String vTotalCapacity)
+			String vColour, String vType)
 	{
 		super(vWheels, vWeight, vMake, vModel, vColour);
-		this.totalCapacity = vTotalCapacity;
+		this.type = vType;
 	}
 	
 	Van(int vWheels, int vWeight, String vMake, String vModel, 
 			String vColour)
 	{
 		super(vWheels, vWeight, vMake, vModel, vColour);
-		this.totalCapacity = "Nothing";
+		this.type = "Nothing";
 	}
 	
 	/////////Methods//////////
-	public void setTotalCapacity(String vTotalCapacity)
+	public void setTotalCapacity(String vType)
 	{
-		this.totalCapacity = vTotalCapacity;
+		this.type = vType;
 	}
 	
 	

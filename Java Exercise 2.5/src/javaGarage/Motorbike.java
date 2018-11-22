@@ -6,8 +6,8 @@ public class Motorbike extends Vehicle
 	protected int engineClass;
 	
 	/////////Constructors//////////
-	Motorbike(int vWheels, int vWeight, String vMake, String vModel, 
-			String vColour, int vEngineClass)
+	Motorbike(int vEngineClass, int vWheels, int vWeight, String vMake, String vModel, 
+			String vColour)
 	{
 		super(vWheels, vWeight, vMake, vModel, vColour);
 		this.engineClass = vEngineClass;

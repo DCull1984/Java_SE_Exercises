@@ -33,4 +33,9 @@ public class Car extends Vehicle
 		this
 	}*/
 	
+	public String toString()
+	{
+		return
+	}
+	
 }

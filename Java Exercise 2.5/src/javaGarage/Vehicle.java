@@ -33,4 +33,8 @@ public abstract class Vehicle
 	       this.weight = vWeight;
 	}
 	
+	public String toString()
+	{
+		return wheels + weight + make + model + colour;
+	}
 }
