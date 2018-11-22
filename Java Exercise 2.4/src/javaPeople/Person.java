@@ -2,8 +2,10 @@ package javaPeople;
 
 public class Person 
 {
+	
+	
 	String name;
-	int Age;
+	String Age;
 	String jobTitle;
 
 }
