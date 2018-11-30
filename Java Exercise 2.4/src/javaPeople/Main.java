@@ -1,6 +1,6 @@
 package javaPeople;
 
-
+// Yes this is a mess....
 public class Main 
 {
 
@@ -8,9 +8,9 @@ public class Main
 	{
 		String arrayPeople[][] = new String [3][3];
 		
-		Person a = new Person();
-		Person b = new Person();
-		Person c = new Person();
+		Person a; //= new Person();
+		Person b; //= new Person();
+		Person c; //= new Person();
 		
 		arrayPeople[0][0] = a.name = ("David");
 		arrayPeople[0][1] = a.Age = ("34");
@@ -24,9 +24,9 @@ public class Main
 		arrayPeople[2][1] = c.Age = ("55");
 		arrayPeople[2][2] = c.jobTitle = ("Singer");
 		
-		for(Person t[]: arrayPeople)
+		for(String t[]: arrayPeople)
 		{
-			System.out.println(t);
+			System.out.println(t.toString());
 		}
 		
 	}
