@@ -2,26 +2,34 @@ package theInfTerrainSim;
 
 import java.util.Scanner;
 
-public class Input 
+public class Input
 {
 	Scanner hInput = new Scanner(System.in);
 	
 	String command = hInput.next();
+		
+	enum Direction {North, East, South,	West};
+	Direction Compass;
 	
-	
-	enum direction {North, East, South, West};
-	
-	/*Input(String mCommand)
+	Input(String mCompass)
 	{
-		this.command = mCommand;
+		this.Compass = Direction.valueOf(mCompass);
 	}
 	
-	Input(String mDirection)
+	Input()
 	{
-		this. = mDirection;
+	
+	}	
+	
+	/*Input(direction Compass)
+	{
+		return;
 	}*/
 	
-	
+	/*public void setDirection (direction mCompass)
+	{
+		this. = mCompass
+	}*/
 
 }
 

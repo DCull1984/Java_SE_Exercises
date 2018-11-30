@@ -1,5 +1,6 @@
 package theInfTerrainSim;
 
+
 public class Main 
 {
 
@@ -36,7 +37,7 @@ public class Main
 		
 		System.out.println("Try 'North', 'East', 'South', or 'West'");
 		
-		Input Command = new Input();
+		/*Input Command = new Input();
 		if(Command.command.equalsIgnoreCase("North"))
 		{
 			Outputs.North();
@@ -65,10 +66,11 @@ public class Main
 		{
 			System.out.println("You mill about, seriously what are you doing with your life??");
 			return;
-		}
+		}*/
 		
 		//@test code
-		/*Input Direction = new Input(Command.toString());
+		Input compass = new Input();
+		
 		switch()
 		{
 			case "North":
@@ -94,11 +96,11 @@ public class Main
 				System.out.println("You head West.");
 				break;
 			}
-		}*/
+		}
 		
 		
 		command.hInput.close();
-		Command.hInput.close();
+		//Command.hInput.close();
 		}
 		
 		
