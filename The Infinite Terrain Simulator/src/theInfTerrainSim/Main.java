@@ -6,86 +6,77 @@ public class Main
 
 	public static void main(String[] args) 
 	{
-		Outputs.Start();
+		boolean quit = true;
 		
-		
-		Input look = new Input();
-		if (look.command.equalsIgnoreCase("Look"))
+		while (quit != false)
 		{
-			Outputs.Middle();
+		
+			Outputs.Start();
+		
+		
+			
+			Input look = new Input(); 
+			if (look.getInput(look).equalsIgnoreCase("look"))
+			{
+				Outputs.Middle();
+			}
+		
+			else
+			{
+				System.out.println("You fail to notice the yorkshire ripper, YOU DIED!");
+				return;
+			}
+			
+			//Input Compass = new Input();
+		while(Outputs.find != 0)
+		{
+			System.out.println("");
+			System.out.println("Try 'North', 'East', 'South', or 'West'");
+		
+			Input Compass = new Input();
+			if(Compass.getInput(Compass).equalsIgnoreCase("North"))
+			{
+				Outputs.North();				
+			}
+		
+			else if (Compass.getInput(Compass).equalsIgnoreCase("East"))
+			{
+				Outputs.East();				
+			}
+		
+			else if (Compass.getInput(Compass).equalsIgnoreCase("South"))
+			{
+				Outputs.South();				
+			}
+		
+			else if (Compass.getInput(Compass).equalsIgnoreCase("West"))
+			{
+				Outputs.West();				
+			}
+		
+			else
+			{
+				System.out.println("You mill about, seriously what are you doing with your life??");				
+			}
+			//Compass.hInput.close();
+		}
+		
+		Input carryOn = new Input();
+		if (carryOn.getInput(carryOn).equalsIgnoreCase("yes") || carryOn.getInput(carryOn).equalsIgnoreCase("y"))
+		{
+			quit = false;
 		}
 		
 		else
 		{
-			System.out.println("You fail to notice the yorkshire ripper, YOU DIED!");
 			return;
 		}
 		
+				
 		
-		System.out.println("Try 'North', 'East', 'South', or 'West'");
 		
-		Input Compass = new Input();
-		if(Compass.command.equalsIgnoreCase("North"))
-		{
-			Outputs.North();			
 		}
-		
-		else if (Compass.command.equalsIgnoreCase("East"))
-		{
-			Outputs.East();			
-		}
-		
-		else if (Compass.command.equalsIgnoreCase("South"))
-		{
-			Outputs.South();			
-		}
-		
-		else if (Compass.command.equalsIgnoreCase("West"))
-		{
-			Outputs.West();			
-		}
-		
-		else
-		{
-			System.out.println("You mill about, seriously what are you doing with your life??");
-			return;
-		}
-		
-		//test code
-		/*Input compass = new Input();
-		
-		switch()
-		{
-			case "North":
-			{
-				Outputs.North();
-				break;
-			}
-			
-			case "East":
-			{
-				Outputs.East();
-				break;
-			}	
-			
-			case "South":
-			{
-				Outputs.South();
-				break;
-			}
-			
-			case "West":
-			{
-				Outputs.West();
-				break;
-			}
-		}*/
-		
-		
-		look.hInput.close();
-		Compass.hInput.close();
-		}
-		
+	}
 		
 	}
 

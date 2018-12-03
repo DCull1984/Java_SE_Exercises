@@ -5,11 +5,20 @@ import java.util.Scanner;
 
 public class Input
 {
-	Scanner hInput = new Scanner(System.in);
-	
-	String command = hInput.next();
+	private Scanner hInput = new Scanner(System.in);
+	private String command = hInput.nextLine();
 		
+	/*Input(String mControl)
+	{
+		getInput(mControl);
+	}*/
 	
-
+	
+	public String getInput(Input control)
+	{
+		
+		return this.command;
+		
+	}
 }
 
