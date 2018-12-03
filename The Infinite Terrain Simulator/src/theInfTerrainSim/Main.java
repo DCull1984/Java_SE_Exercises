@@ -7,26 +7,12 @@ public class Main
 	public static void main(String[] args) 
 	{
 		Outputs.Start();
-		/*Scanner hInput = new Scanner(System.in);
 		
-		String command = hInput.next();*/
 		
-		/*System.out.println("You awaken to find yourself in a barren moor (must be south yorkshire)");
-		System.out.println("Try 'Look'");*/
-		
-		Input command = new Input();
-		if (command.command.equalsIgnoreCase("Look"))
+		Input look = new Input();
+		if (look.command.equalsIgnoreCase("Look"))
 		{
 			Outputs.Middle();
-			/*System.out.print("Grey foggy clouds float oppersively overhead,");
-			System.out.println("reflected in the murkey grey water which reaches upto your shins.");
-			System.out.println("Some black plants barely poke out of the shallow water.");
-			
-			System.out.println("");
-			
-			System.out.println("You notice a small watch-like device in your left hand,");
-			System.out.println("YUP! you guessed it, you have a COMPASS!");*/
-			
 		}
 		
 		else
@@ -35,72 +21,69 @@ public class Main
 			return;
 		}
 		
+		
 		System.out.println("Try 'North', 'East', 'South', or 'West'");
 		
-		/*Input Command = new Input();
-		if(Command.command.equalsIgnoreCase("North"))
+		Input Compass = new Input();
+		if(Compass.command.equalsIgnoreCase("North"))
 		{
-			Outputs.North();
-			//System.out.println("You head North.");
+			Outputs.North();			
 		}
 		
-		else if (Command.command.equalsIgnoreCase("East"))
+		else if (Compass.command.equalsIgnoreCase("East"))
 		{
-			Outputs.East();
-			//System.out.println("You head East.");
+			Outputs.East();			
 		}
 		
-		else if (Command.command.equalsIgnoreCase("South"))
+		else if (Compass.command.equalsIgnoreCase("South"))
 		{
-			Outputs.South();
-			//System.out.println("You head South.");
+			Outputs.South();			
 		}
 		
-		else if (Command.command.equalsIgnoreCase("West"))
+		else if (Compass.command.equalsIgnoreCase("West"))
 		{
-			Outputs.West();
-			//System.out.println("You head West.");
+			Outputs.West();			
 		}
 		
 		else
 		{
 			System.out.println("You mill about, seriously what are you doing with your life??");
 			return;
-		}*/
+		}
 		
-		//@test code
-		Input compass = new Input();
+		//test code
+		/*Input compass = new Input();
 		
 		switch()
 		{
 			case "North":
 			{
-				System.out.println("You head North.");
+				Outputs.North();
 				break;
 			}
 			
 			case "East":
 			{
-				System.out.println("You head East.");
+				Outputs.East();
 				break;
 			}	
 			
 			case "South":
 			{
-				System.out.println("You head South.");
+				Outputs.South();
 				break;
 			}
 			
 			case "West":
 			{
-				System.out.println("You head West.");
+				Outputs.West();
 				break;
 			}
-		}
+		}*/
 		
 		
-		command.hInput.close();
-		//Command.hInput.close();
+		look.hInput.close();
+		Compass.hInput.close();
 		}
 		
 		
