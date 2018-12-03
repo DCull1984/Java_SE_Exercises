@@ -4,9 +4,9 @@ import java.util.Random;
 
 public class Outputs 
 {
-	  static Random distance = new Random(System.currentTimeMillis());
+	 private static Random distance = new Random(System.currentTimeMillis());
 	
-	 static int find = distance.nextInt(6);
+	 static int find = distance.nextInt();
 	
 	
 	public static void Start()
@@ -55,42 +55,51 @@ public class Outputs
 	
 	public static void found()
 	{
-				
+		find = distance.nextInt(6);
+		
 		switch(find)
 		{
 			case 0:
-				System.out.println("You found a means to survive!");
-				System.out.println("***CONGRATULATIONS!!***");
-				System.out.println("");
-				System.out.println("Do you wish to play again? (y/n): ");
-				break;
-				//return;
+				{
+					System.out.println("You found a means to survive!");
+					System.out.println("***CONGRATULATIONS!!***");
+					System.out.println("");
+					//System.out.println("Do you wish to play again? (y/n): ");					
+					break;
+				}
 		
 			case 1:
-				System.out.println("You travel for 1 mile and find nothing of value.");
-				break;
-				//return;
+				{	
+					System.out.println("You travel for 1 mile and find nothing of value.");
+					break;
+				}	
 				
 			case 2:
-				System.out.println("You travel for 2 miles and find nothing of value, you feel mildly tired.");
-				break;
-				//return;
+				{	
+					System.out.println("You travel for 2 miles and find nothing of value, you feel mildly tired.");
+					break;
+				}
 				
 			case 3:
-				System.out.println("You travel for 3 miles and find more wasteland, you feel moderately tired.");
-				break;
-				//return;
+				{
+					System.out.println("You travel for 3 miles and find more wasteland, you feel moderately tired.");
+					break;
+				}
 				
 			case 4:
-				System.out.println("You travel 4 miles, you begin to feel really tired with nothing to show.");
-				break;
-				//return;
+				{	
+					System.out.println("You travel 4 miles, you begin to feel really tired with nothing to show.");
+					break;
+				}	
 				
 			case 5:
-				System.out.println("You travel 5 miles, you're really nuts you know that?");
-				break;
-				//return;
+				{
+					System.out.println("You travel 5 miles, you're really nuts you know that?");
+					break;
+				}	
+				
 		}
+		
 		
 	}
 

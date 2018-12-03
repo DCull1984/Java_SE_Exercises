@@ -6,16 +6,16 @@ public class Main
 
 	public static void main(String[] args) 
 	{
-		boolean quit = true;
+		boolean playGame = true;
 		
-		while (quit != false)
+		while (playGame != false)
 		{
 		
 			Outputs.Start();
 		
-		
-			
+					
 			Input look = new Input(); 
+			
 			if (look.getInput(look).equalsIgnoreCase("look"))
 			{
 				Outputs.Middle();
@@ -27,24 +27,24 @@ public class Main
 				return;
 			}
 			
-			
-			//Input Compass = new Input();
+						
 		while(Outputs.find != 0)
 		{			
 			System.out.println("");
 			System.out.print("Try 'North', 'East', 'South', or 'West': ");
 		
 			Input Compass = new Input();
+			
 			if(Compass.getInput(Compass).equalsIgnoreCase("North"))
 			{
 				Outputs.North();				
 			}
-		
+				
 			else if (Compass.getInput(Compass).equalsIgnoreCase("East"))
 			{
 				Outputs.East();				
 			}
-		
+			
 			else if (Compass.getInput(Compass).equalsIgnoreCase("South"))
 			{
 				Outputs.South();				
@@ -58,25 +58,25 @@ public class Main
 			else
 			{
 				System.out.println("You mill about, seriously what are you doing with your life??");				
-			}
-			//Compass.hInput.close();
-		}
-		
-		Input carryOn = new Input();
-		if (carryOn.getInput(carryOn).equalsIgnoreCase("yes") || carryOn.getInput(carryOn).equalsIgnoreCase("y"))
-		{
-			quit = false;
-		}
-		
-		else
-		{
-			return;
-		}
-		
+			}				
 				
-		
+		}		
 		
 		}
+		
+		/*Input carryOn = new Input();
+		
+		while(carryOn.setPlayGame( || carryOn.setPlayGame(carryOn))
+			{
+												
+				if (carryOn.setPlayGame(carryOn).equalsIgnoreCase("No"))		
+				{
+				playGame = false;
+				System.out.println("Goodbye.");
+				}*/
+							
+			//}		
+		
 	}
 		
 	}
