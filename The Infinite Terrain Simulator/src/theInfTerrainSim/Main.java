@@ -27,11 +27,12 @@ public class Main
 				return;
 			}
 			
+			
 			//Input Compass = new Input();
 		while(Outputs.find != 0)
-		{
+		{			
 			System.out.println("");
-			System.out.println("Try 'North', 'East', 'South', or 'West'");
+			System.out.print("Try 'North', 'East', 'South', or 'West': ");
 		
 			Input Compass = new Input();
 			if(Compass.getInput(Compass).equalsIgnoreCase("North"))

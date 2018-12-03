@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class Outputs 
 {
-	 static Random distance = new Random(System.currentTimeMillis());
+	  static Random distance = new Random(System.currentTimeMillis());
 	
 	 static int find = distance.nextInt(6);
 	
@@ -94,4 +94,5 @@ public class Outputs
 		
 	}
 
+	
 }
