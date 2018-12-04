@@ -20,22 +20,34 @@ public class Main
 			look();
 								
 						
-			while(Outputs.find != 0)
-			{			
-				Outputs.Direction();
+				while(Outputs.find != 0)
+				{			
+					Outputs.Direction();
 		
-				compass();
+					compass();
 				
-			}		
-		
+				}		
+			
+			endGame(playGame);	
+			/*System.out.print("Do you want to play again? (Y/N): ");
+			
+			Input quitGame = new Input();
+			
+			if (quitGame.getInput(quitGame).equalsIgnoreCase("n") || quitGame.getInput(quitGame).equalsIgnoreCase("no"))
+			{
+				playGame = false;
+			}
+			
+			else
+			{
+				playGame = true;
+			}*/
 		}
 					
 		
 	}
 	
-	
-
-	public static void look()
+public static void look()
 	{
 		Input look = new Input();
 		
@@ -50,10 +62,10 @@ public class Main
 		}
 	}
 	
-	public static void compass()
+public static void compass()
 	{
 		Input Compass = new Input();
-		
+			
 		if(Compass.getInput(Compass).equalsIgnoreCase("North"))
 		{
 			Outputs.North();				
@@ -79,7 +91,27 @@ public class Main
 			Outputs.NoDirection();
 		}				
 	}
+		
+public static boolean endGame(boolean playGame)
+	{				
+		//this.playGame = playGame;
 	
+		System.out.print("Do you want to play again? (Y/N): ");
+		
+		Input quitGame = new Input();
+		
+		if (quitGame.getInput(quitGame).equalsIgnoreCase("n") || quitGame.getInput(quitGame).equalsIgnoreCase("no"))
+		{
+			
+			return playGame = false;
+		}
+		
+		else
+		{
+			//playGame = true;
+			return playGame = true;
+		}
+	}
 }
 
 

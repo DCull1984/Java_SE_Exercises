@@ -6,16 +6,12 @@ import java.util.Random;
 
 public class Outputs 
 {
-	/*BufferedReader Narration = new BufferedReader(new FileReader("Story.txt")); throws IOException; 
-	{
-		String storyFile
-	}*/
+	//BufferedReader Narration = new BufferedReader(); 
+	
 	
 	private static Random distance = new Random(System.currentTimeMillis());
 	static int find = distance.nextInt();
-	
-	 
-	 
+		 
 	
  	public static void Start()
 	{
@@ -92,7 +88,6 @@ public class Outputs
 					System.out.println("You found a means to survive!");
 					System.out.println("***CONGRATULATIONS!!***");
 					System.out.println("");	
-										
 					break;
 				}
 		
