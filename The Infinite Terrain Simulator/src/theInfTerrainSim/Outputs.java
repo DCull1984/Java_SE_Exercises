@@ -1,18 +1,34 @@
 package theInfTerrainSim;
 
 import java.util.Random;
+//import java.io.*;
+
 
 public class Outputs 
 {
-	 private static Random distance = new Random(System.currentTimeMillis());
+	/*BufferedReader Narration = new BufferedReader(new FileReader("Story.txt")); throws IOException; 
+	{
+		String storyFile
+	}*/
 	
-	 static int find = distance.nextInt();
+	private static Random distance = new Random(System.currentTimeMillis());
+	static int find = distance.nextInt();
 	
+	 
+	 
 	
-	public static void Start()
+ 	public static void Start()
 	{
 		System.out.println("You awaken to find yourself in a barren moor (must be south yorkshire)");
 		System.out.println("Try 'Look'");
+		
+		//System.out.println(Narration.readLine());
+	}
+	
+	public static void MissInput()
+	{
+		System.out.println("You fail to notice the yorkshire ripper, YOU DIED!");
+		return;
 	}
 	
 	public static void Middle()
@@ -29,6 +45,18 @@ public class Outputs
 		System.out.println("");
 	}
 	
+	public static void Direction()
+	{
+		System.out.println("");
+		System.out.print("Try 'North', 'East', 'South', or 'West': ");
+	}
+
+	public static void NoDirection()
+	{
+		System.out.println("You mill about, seriously what are you doing with your life??");				
+
+	}
+		
 	public static void North()
 	{
 		System.out.println("You head North.");
@@ -53,7 +81,7 @@ public class Outputs
 		found();
 	}
 	
-	public static void found()
+	private static void found()
 	{
 		find = distance.nextInt(6);
 		
@@ -63,8 +91,8 @@ public class Outputs
 				{
 					System.out.println("You found a means to survive!");
 					System.out.println("***CONGRATULATIONS!!***");
-					System.out.println("");
-					//System.out.println("Do you wish to play again? (y/n): ");					
+					System.out.println("");	
+										
 					break;
 				}
 		

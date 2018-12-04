@@ -5,9 +5,9 @@ import java.util.Scanner;
 
 public class Input
 {
-	private Scanner hInput = new Scanner(System.in);
-	private String command = hInput.next();
-	//private Input game = hInput;	
+	private static Scanner hInput = new Scanner(System.in);
+	private  String command = hInput.next();
+		
 		
 	
 	
@@ -19,9 +19,7 @@ public class Input
 		return this.command;
 	}
 	
-	public void setPlayGame(String mGamePlay)
-	{
-		this.command = mGamePlay;
-	}
+		
+	
 }
 
