@@ -7,11 +7,12 @@ import java.util.Random;
 public class Outputs 
 {
 	//BufferedReader Narration = new BufferedReader(); 
-	
-	
+		
 	private static Random distance = new Random(System.currentTimeMillis());
-	static int find = distance.nextInt();
-		 
+	public static int find = distance.nextInt();
+	
+	
+	
 	
  	public static void Start()
 	{
@@ -24,7 +25,6 @@ public class Outputs
 	public static void MissInput()
 	{
 		System.out.println("You fail to notice the yorkshire ripper, YOU DIED!");
-		return;
 	}
 	
 	public static void Middle()
@@ -50,7 +50,6 @@ public class Outputs
 	public static void NoDirection()
 	{
 		System.out.println("You mill about, seriously what are you doing with your life??");				
-
 	}
 		
 	public static void North()
@@ -79,8 +78,8 @@ public class Outputs
 	
 	private static void found()
 	{
-		find = distance.nextInt(6);
-		
+		Outputs.find = distance.nextInt(6);
+				
 		switch(find)
 		{
 			case 0:

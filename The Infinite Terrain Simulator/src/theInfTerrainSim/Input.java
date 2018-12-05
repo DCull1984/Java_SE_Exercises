@@ -10,10 +10,6 @@ public class Input
 		
 		
 	
-	
-	
-	
-	
 	public String getInput(Input control)
 	{		
 		return this.command;

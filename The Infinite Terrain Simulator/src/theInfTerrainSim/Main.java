@@ -8,18 +8,14 @@ public class Main
 	{
 		
 		boolean playGame = true;
-		
-		
+				
 		while (playGame != false)
-		{
-		
-			
+		{			
 			Outputs.Start();
+					
+			look(playGame);
 			
-		
-			look();
 								
-						
 				while(Outputs.find != 0)
 				{			
 					Outputs.Direction();
@@ -40,26 +36,29 @@ public class Main
 			
 			else
 			{
-				playGame = true;
+				playGame = true;				
 			}*/
 		}
 					
 		
 	}
 	
-public static void look()
+public static boolean look(boolean playGame)
 	{
 		Input look = new Input();
 		
 		if (look.getInput(look).equalsIgnoreCase("look"))
 		{
 			Outputs.Middle();
+			return playGame = true;
 		}
 	
 		else
 		{
 			Outputs.MissInput();
+			return playGame = false;
 		}
+		
 	}
 	
 public static void compass()
@@ -94,21 +93,18 @@ public static void compass()
 		
 public static boolean endGame(boolean playGame)
 	{				
-		//this.playGame = playGame;
-	
+			
 		System.out.print("Do you want to play again? (Y/N): ");
 		
 		Input quitGame = new Input();
 		
 		if (quitGame.getInput(quitGame).equalsIgnoreCase("n") || quitGame.getInput(quitGame).equalsIgnoreCase("no"))
-		{
-			
+		{	
 			return playGame = false;
 		}
 		
 		else
 		{
-			//playGame = true;
 			return playGame = true;
 		}
 	}
