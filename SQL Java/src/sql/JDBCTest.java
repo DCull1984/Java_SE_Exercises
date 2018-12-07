@@ -1,6 +1,5 @@
 package sql;
 
-//import java.sql.Driver;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
@@ -11,14 +10,17 @@ public class JDBCTest {
 
 	public static void main(String[] args) 
 	{
-		 final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
+		
+         final String JDBC_DRIVER = "com.mysql.cj.jdbc.Driver";
 		 final String DB_URL = "jdbc:mysql://localhost:3306/ebookshop";
 		 final String USER = "root";
 		 final String PASS = "root";
 		
-		 try {
+		 try 
+		 {
 			Class.forName(JDBC_DRIVER);
-		} catch (ClassNotFoundException e) {
+		 } 
+		 catch (ClassNotFoundException e) {
 			
 			e.printStackTrace();
 		}
