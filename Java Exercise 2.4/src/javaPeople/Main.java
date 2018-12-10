@@ -8,9 +8,9 @@ public class Main
 	{
 		String arrayPeople[][] = new String [3][3];
 		
-		Person a; //= new Person();
-		Person b; //= new Person();
-		Person c; //= new Person();
+		Person a = new Person(null, null, null);
+		Person b = new Person(null, null, null);
+		Person c = new Person(null, null, null);
 		
 		arrayPeople[0][0] = a.name = ("David");
 		arrayPeople[0][1] = a.Age = ("34");
