@@ -1,4 +1,4 @@
-package springTest.Model;
+package com.SpringTest.Cull_David.SpringTestModel;
 
 import java.io.Serializable;
 import java.util.Date;
@@ -22,7 +22,7 @@ public class SpringTestDataModel implements Serializable
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long id;
+	private long id;
 	
 	@NotBlank
 	private String name;
@@ -41,59 +41,55 @@ public class SpringTestDataModel implements Serializable
 	@Temporal(TemporalType.TIMESTAMP)
 	@LastModifiedDate
 	private Date lastModified;
-	
-	public Long getId()
-	{
+
+	public long getId() {
 		return id;
 	}
-	
-	public String getName()
-	{
+
+	public void setId(long id) {
+		this.id = id;
+	}
+
+	public String getName() {
 		return name;
 	}
-	
-	public void setName(String name)
-	{
-		
+
+	public void setName(String name) {
+		this.name = name;
 	}
-	
-	public String getAddress()
-	{
+
+	public String getAddress() {
 		return address;
 	}
-	
-	public void setAddress(String address)
-	{
-		
+
+	public void setAddress(String address) {
+		this.address = address;
 	}
-	
-	public Integer getAge()
-	{
+
+	public Integer getAge() {
 		return age;
 	}
-	
-	public void setAge(Integer age)
-	{
-		
+
+	public void setAge(Integer age) {
+		this.age = age;
 	}
-	
-	public Date getCreationDate()
-	{
+
+	public Date getCreationDate() {
 		return creationDate;
 	}
-	
-	public void setCreationDate(Date creationDate)
-	{
-		
+
+	public void setCreationDate(Date creationDate) {
+		this.creationDate = creationDate;
 	}
-	
-	public Date getLastModified()
-	{
+
+	public Date getLastModified() {
 		return lastModified;
 	}
-	
-	public void SetLastModified(Date lastModified)
-	{
-		
+
+	public void setLastModified(Date lastModified) {
+		this.lastModified = lastModified;
 	}
+	
+	
+	
 }

@@ -1,4 +1,4 @@
-package springTestController;
+package com.SpringTest.Cull_David.SpringTestController;
 
 import java.util.List;
 
@@ -15,9 +15,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import springTestRepository.SpringTestRepository;
-import springTest.Model.SpringTestDataModel;
-import springTestExceptions.ResourceNotFoundException;
+import com.SpringTest.Cull_David.SpringTestExceptions.ResourceNotFoundException;
+import com.SpringTest.Cull_David.SpringTestModel.SpringTestDataModel;
+import com.SpringTest.Cull_David.SpringTestRepository.SpringTestRepository;
 
 @RestController
 @RequestMapping("/api")
@@ -27,14 +27,14 @@ public class SpringTestController
 	SpringTestRepository springRepo;
 	
 	//Method to create a person
-	@PostMapping("/MySpringDataModel")
+	@PostMapping("/person")
 	public SpringTestDataModel createPerson(@Valid @RequestBody SpringTestDataModel SpringModel)
 	{
 		return springRepo.save(SpringModel);
 	}
 	
 	//Method to get a person
-	@GetMapping("person/{id}")
+	@GetMapping("/person/{id}")
 	public SpringTestDataModel getPersonbyID(@PathVariable(value = "id")Long personID)
 	{
 		return springRepo.findById(personID).orElseThrow(()-> 
