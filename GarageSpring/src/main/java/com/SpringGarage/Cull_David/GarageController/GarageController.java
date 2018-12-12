@@ -40,15 +40,19 @@ public class GarageController
 			return garageStore.findById(mVehicleID).orElseThrow(()-> 
 			new ResourceNotFoundException("GarageDataModel", "Type", mVehicleID));
 		}
-/*/////////////////////Comment out this block to work////////////////////////	
-		//Method to get a vehicle
-		@GetMapping("/vehicle/{type}")
-		public GarageDataModel searchByType(@PathVariable(value = "type")String mVehicleType)
+
+		@GetMapping("/search/{type}")
+		public List<GarageDataModel> getVehicleByType(@PathVariable(value = "type")String pType)
 		{
-			
-			return searchByType(mVehicleType);
-		}*/
+			return garageStore.findByType(pType);
+		}
 	
+		/*@GetMapping("/search/{make}")
+		public List<GarageDataModel> getVehicleByMake(@PathVariable(value = "make")String pMake)
+		{
+			return garageStore.findByMake(pMake);
+		}*/
+		
 		//Method to get all vehicles
 		@GetMapping("/vehicle")
 		public List<GarageDataModel>getAllVehicle()
@@ -87,4 +91,13 @@ public class GarageController
 			return ResponseEntity.ok().build();
 		}
 		
+		/*@DeleteMapping("/vehicle/{make}")
+		public ResponseEntity<?> deleteByType(@PathVariable (value = "type")String pMake)
+		{
+			List<GarageDataModel> deleteByMake = garageStore.findByMake(pMake);
+			
+			garageStore.deleteAll(deleteByMake);
+			
+			return ResponseEntity.ok().build();
+		}*/
 }

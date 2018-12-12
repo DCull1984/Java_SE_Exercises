@@ -47,6 +47,25 @@ public class GarageDataModel implements Serializable
 		@Temporal(TemporalType.TIMESTAMP)
 		@LastModifiedDate
 		private Date lastModified;
+		
+		
+		public GarageDataModel()
+		{
+			
+		}
+		
+		public GarageDataModel(String pType, String pMake, String pModel, 
+				String pColour, Integer pEngineCapacity)
+		{
+			this.type = pType;
+			this.make = pMake;
+			this.model = pModel;
+			this.colour = pColour;
+			this.engineCapacity = pEngineCapacity;			
+		}
+		
+		
+		
 
 		public long getId() {
 			return id;
