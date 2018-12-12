@@ -64,9 +64,6 @@ public class GarageDataModel implements Serializable
 			this.engineCapacity = pEngineCapacity;			
 		}
 		
-		
-		
-
 		public long getId() {
 			return id;
 		}

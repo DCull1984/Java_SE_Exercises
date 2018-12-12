@@ -33,6 +33,7 @@ public class IntegrationTest
 	@Autowired
 	private GarageRepository testRepo;
 	
+	//This WILL wipe the DataBase
 	@Before
 	public void clearDB()
 	{
