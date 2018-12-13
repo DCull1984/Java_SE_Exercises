@@ -1,6 +1,7 @@
 package integration;
 
 import static org.hamcrest.CoreMatchers.is;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.delete;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
@@ -16,6 +17,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.MediaType;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.test.web.servlet.ResultHandler;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 
 import com.SpringGarage.Cull_David.GarageSpringApplication;
@@ -66,4 +68,19 @@ public class IntegrationTest
 				.andExpect(content().contentTypeCompatibleWith(MediaType.APPLICATION_JSON))
 				.andExpect(jsonPath("$.type", is("Car")));
 	}
+
+	@Test
+	public void deleteVehicleFromDB() throws Exception
+	{
+		testRepo.save(new GarageDataModel("Car", "Ford", "Escort", "White", 1400));
+		mvc.perform(get("/api/vehicle")
+				.contentType(MediaType.APPLICATION_JSON))
+				.andExpect(status().isOk())
+				.andExpect(content()
+				.contentTypeCompatibleWith(MediaType.APPLICATION_JSON))
+				.andExpect(jsonPath("$[0].make", is("Ford")));
+		mvc.perform(MockMvcRequestBuilders.delete("api/vehicle")
+				.;
+	}
 }
+	

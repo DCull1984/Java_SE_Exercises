@@ -1,6 +1,6 @@
 package repo;
 
-import static org.junit.Assert.assertNotNull;
+
 import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
@@ -13,6 +13,7 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import com.SpringGarage.Cull_David.GarageSpringApplication;
+//import com.SpringGarage.Cull_David.GarageController.GarageController;
 import com.SpringGarage.Cull_David.GarageModel.GarageDataModel;
 import com.SpringGarage.Cull_David.GarageRepository.GarageRepository;
 
@@ -29,10 +30,8 @@ public class RepositoryTest
 	
 	@Test
 	public void garageMainTest()
-	{
-		GarageSpringApplication testMain = new GarageSpringApplication();
-		
-		assertNotNull(testMain);
+	{	//new GarageSpringApplication();
+		GarageSpringApplication.main(new String[] {});	
 	}
 	
 	@Test
@@ -66,6 +65,11 @@ public class RepositoryTest
 		//assertTrue(repositoryTest.findByType("Car").add(garageTest));
 	}
 	
+	/*@Test
+	public void ControlTest()
+	{		
 		
+	}
+		*/
 	
 }
