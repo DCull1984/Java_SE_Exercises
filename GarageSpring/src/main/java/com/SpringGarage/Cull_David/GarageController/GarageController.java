@@ -47,12 +47,6 @@ public class GarageController
 			return garageStore.findByType(pType);
 		}
 	
-		/*@GetMapping("/search/{make}")
-		public List<GarageDataModel> getVehicleByMake(@PathVariable(value = "make")String pMake)
-		{
-			return garageStore.findByMake(pMake);
-		}*/
-		
 		//Method to get all vehicles
 		@GetMapping("/vehicle")
 		public List<GarageDataModel>getAllVehicle()
