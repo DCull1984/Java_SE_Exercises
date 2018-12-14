@@ -1,6 +1,5 @@
 package theInfTerrainSim;
 
-
 public class Main 
 {
 
@@ -63,24 +62,24 @@ public static boolean look(boolean playGame)
 	
 public static void compass()
 	{
-		Input Compass = new Input();
+		Input iCompass = new Input();
 			
-		if(Compass.getInput(Compass).equalsIgnoreCase("North"))
+		if(iCompass.getInput(iCompass).equalsIgnoreCase("North"))
 		{
 			Outputs.North();				
 		}
 			
-		else if (Compass.getInput(Compass).equalsIgnoreCase("East"))
+		else if (iCompass.getInput(iCompass).equalsIgnoreCase("East"))
 		{
 			Outputs.East();				
 		}
 		
-		else if (Compass.getInput(Compass).equalsIgnoreCase("South"))
+		else if (iCompass.getInput(iCompass).equalsIgnoreCase("South"))
 		{
 			Outputs.South();				
 		}
 	
-		else if (Compass.getInput(Compass).equalsIgnoreCase("West"))
+		else if (iCompass.getInput(iCompass).equalsIgnoreCase("West"))
 		{
 			Outputs.West();				
 		}

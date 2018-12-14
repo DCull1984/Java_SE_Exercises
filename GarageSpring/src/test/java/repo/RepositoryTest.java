@@ -31,7 +31,7 @@ public class RepositoryTest
 	@Test
 	public void garageMainTest()
 	{	//new GarageSpringApplication();
-		GarageSpringApplication.main(new String[] {});	
+		GarageSpringApplication.main(new String[] {});
 	}
 	
 	@Test

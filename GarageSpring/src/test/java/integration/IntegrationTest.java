@@ -7,7 +7,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
-import org.junit.Before;
+//import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
@@ -17,6 +17,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.MediaType;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.test.web.servlet.request.MockHttpServletRequestBuilder;
 import org.springframework.test.web.servlet.ResultHandler;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 
@@ -35,12 +36,12 @@ public class IntegrationTest
 	@Autowired
 	private GarageRepository testRepo;
 	
-	//This WILL wipe the DataBase
+	/*//This WILL wipe the DataBase
 	@Before
 	public void clearDB()
 	{
 		testRepo.deleteAll();
-	}
+	}*/
 	
 	@Test
 	public void findAndRetrieveVehicleFromDB()
@@ -72,15 +73,12 @@ public class IntegrationTest
 	@Test
 	public void deleteVehicleFromDB() throws Exception
 	{
-		testRepo.save(new GarageDataModel("Car", "Ford", "Escort", "White", 1400));
-		mvc.perform(get("/api/vehicle")
-				.contentType(MediaType.APPLICATION_JSON))
-				.andExpect(status().isOk())
-				.andExpect(content()
-				.contentTypeCompatibleWith(MediaType.APPLICATION_JSON))
-				.andExpect(jsonPath("$[0].make", is("Ford")));
-		mvc.perform(MockMvcRequestBuilders.delete("api/vehicle")
-				.;
+		mvc.perform(MockMvcRequestBuilders
+				.delete("/api/vehicle/Escort")
+				.contentType(MediaType.APPLICATION_JSON)
+				.accept(MediaType.APPLICATION_JSON))
+				.andExpect(status().isBadRequest());
+				
 	}
 }
 	
