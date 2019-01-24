@@ -1,0 +1,7 @@
+package pom;
+
+public class Constants 
+{
+	public String URL = "http://newtours.demoaut.com/mercurywelcome.php";
+	//public String		
+}

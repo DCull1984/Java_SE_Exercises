@@ -1,0 +1,17 @@
+
+tsquid:UselessImportCheck"3Remove this unused import 'org.openqa.selenium.By'.(ÿŠŞ›8œÇ•Ù‡-H˜
+RMINORZ
+CODE_SMELL
+”squid:UselessImportCheck
+"NRemove this unused import 'org.openqa.selenium.support.ui.ExpectedConditions'.(û€Èéúÿÿÿÿ8œÇ•Ù‡-H—
+RMINORZ
+CODE_SMELL
+Šsquid:UselessImportCheck"IRemove this unused import 'org.openqa.selenium.support.ui.WebDriverWait'.(¥÷ó8œÇ•Ù‡-H–
+RMINORZ
+CODE_SMELL
+qsquid:UselessImportCheck"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8ÑŒ“Ù‡-H
+RMINORZ
+CODE_SMELL
+{squid:UselessImportCheck":Remove this unused import 'org.openqa.selenium.WebDriver'.(ñšÿÀ8ÎÊÂÙ‡-H
+RMINORZ
+CODE_SMELL

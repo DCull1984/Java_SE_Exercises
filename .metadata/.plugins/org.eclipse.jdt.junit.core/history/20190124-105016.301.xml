@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="stackTest" project="Stack Cucumber Example" tests="15" started="15" failures="2" errors="2" ignored="0">
+  <testsuite name="com.qa.test.Guru99Test.stackTest" time="0.066">
+    <testsuite name="Feature: Working with a Stack" time="0.066">
+      <testsuite name="Scenario: Push an item into a stack" time="0.003">
+        <testcase name="Given an empty stack" classname="Scenario: Push an item into a stack" time="0.0"/>
+        <testcase name="When I push an item into the stack" classname="Scenario: Push an item into a stack" time="0.003"/>
+        <testcase name="Then the stack contains one item" classname="Scenario: Push an item into a stack" time="0.0"/>
+      </testsuite>
+      <testsuite name="Scenario: Push two items into a stack" time="0.0">
+        <testcase name="Given an empty stack" classname="Scenario: Push two items into a stack" time="0.0"/>
+        <testcase name="When I push an item into the stack" classname="Scenario: Push two items into a stack" time="0.0"/>
+        <testcase name="And I push another item into the stack" classname="Scenario: Push two items into a stack" time="0.0"/>
+        <testcase name="Then the stack contains two items" classname="Scenario: Push two items into a stack" time="0.0"/>
+      </testsuite>
+      <testsuite name="Scenario: Pop a given item from the stack" time="0.001" incomplete="true">
+        <error>java.util.EmptyStackException&#13;
+	at java.util.Stack.peek(Unknown Source)&#13;
+	at java.util.Stack.pop(Unknown Source)&#13;
+	at com.qa.test.Guru99Test.StackExample.pop(StackExample.java:10)&#13;
+	at com.qa.test.Guru99Test.StackSteps.i_get_the_same_item_back(StackSteps.java:59)&#13;
+	at ✽.Then I get the same item back(stack.feature:21)&#13;
+&#13;
+</error>
+        <testcase name="Given an empty stack" classname="Scenario: Pop a given item from the stack" time="0.0"/>
+        <testcase name="When I push an item into the stack" classname="Scenario: Pop a given item from the stack" time="0.0"/>
+        <testcase name="And I pop from the stack" classname="Scenario: Pop a given item from the stack" time="0.0"/>
+        <testcase name="Then I get the same item back" classname="Scenario: Pop a given item from the stack" time="0.0">
+          <error>java.util.EmptyStackException&#13;
+	at java.util.Stack.peek(Unknown Source)&#13;
+	at java.util.Stack.pop(Unknown Source)&#13;
+	at com.qa.test.Guru99Test.StackExample.pop(StackExample.java:10)&#13;
+	at com.qa.test.Guru99Test.StackSteps.i_get_the_same_item_back(StackSteps.java:59)&#13;
+	at ✽.Then I get the same item back(stack.feature:21)&#13;
+&#13;
+</error>
+        </testcase>
+      </testsuite>
+      <testsuite name="Scenario: Pop a given item from the stack" time="0.0" incomplete="true">
+        <failure>java.lang.AssertionError: expected:&lt;java.lang.Object@74d1dc36&gt; but was:&lt;com.qa.test.Guru99Test.StackExample@7161d8d1&gt;&#13;
+	at org.junit.Assert.fail(Assert.java:88)&#13;
+	at org.junit.Assert.failNotEquals(Assert.java:834)&#13;
+	at org.junit.Assert.assertEquals(Assert.java:118)&#13;
+	at org.junit.Assert.assertEquals(Assert.java:144)&#13;
+	at com.qa.test.Guru99Test.StackSteps.i_get_the_same_item_back(StackSteps.java:60)&#13;
+	at ✽.Then I get the same item back(stack.feature:27)&#13;
+&#13;
+</failure>
+        <testcase name="Given a stack with 3 items" classname="Scenario: Pop a given item from the stack" time="0.0"/>
+        <testcase name="When I push an item into the stack" classname="Scenario: Pop a given item from the stack" time="0.0"/>
+        <testcase name="And I pop from the stack" classname="Scenario: Pop a given item from the stack" time="0.0"/>
+        <testcase name="Then I get the same item back" classname="Scenario: Pop a given item from the stack" time="0.0">
+          <failure>java.lang.AssertionError: expected:&lt;java.lang.Object@74d1dc36&gt; but was:&lt;com.qa.test.Guru99Test.StackExample@7161d8d1&gt;&#13;
+	at org.junit.Assert.fail(Assert.java:88)&#13;
+	at org.junit.Assert.failNotEquals(Assert.java:834)&#13;
+	at org.junit.Assert.assertEquals(Assert.java:118)&#13;
+	at org.junit.Assert.assertEquals(Assert.java:144)&#13;
+	at com.qa.test.Guru99Test.StackSteps.i_get_the_same_item_back(StackSteps.java:60)&#13;
+	at ✽.Then I get the same item back(stack.feature:27)&#13;
+&#13;
+</failure>
+        </testcase>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

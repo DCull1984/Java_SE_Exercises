@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestBuilder" project="TeaTesting" tests="6" started="6" failures="2" errors="2" ignored="2">
+  <testsuite name="pomcumber.TestBuilder" time="16.298">
+    <testsuite name="Feature: Shopping on a website" time="16.298">
+      <testsuite name="Scenario: Browse the items available on the website" time="0.186" incomplete="true">
+        <failure>java.lang.AssertionError: expected:&lt;http://www.practiceselenium.com/menu.html&gt; but was:&lt;[[FirefoxDriver: firefox on WINDOWS (263af952-902e-409e-bc56-40587084c155)] -&gt; xpath: /html/body/div/div/div[1]/div/div[13]/div/ul/li[3]/a]&gt;&#13;
+	at org.junit.Assert.fail(Assert.java:88)&#13;
+	at org.junit.Assert.failNotEquals(Assert.java:834)&#13;
+	at org.junit.Assert.assertEquals(Assert.java:118)&#13;
+	at org.junit.Assert.assertEquals(Assert.java:144)&#13;
+	at pomcumber.TestingClass.i_navigate_to_the_Menu_page(TestingClass.java:42)&#13;
+	at ✽.When I navigate to the 'Menu' page(TeaTesting.feature:8)&#13;
+&#13;
+</failure>
+        <testcase name="Given the correct web address" classname="Scenario: Browse the items available on the website" time="0.182"/>
+        <testcase name="When I navigate to the 'Menu' page" classname="Scenario: Browse the items available on the website" time="0.004">
+          <failure>java.lang.AssertionError: expected:&lt;http://www.practiceselenium.com/menu.html&gt; but was:&lt;[[FirefoxDriver: firefox on WINDOWS (263af952-902e-409e-bc56-40587084c155)] -&gt; xpath: /html/body/div/div/div[1]/div/div[13]/div/ul/li[3]/a]&gt;&#13;
+	at org.junit.Assert.fail(Assert.java:88)&#13;
+	at org.junit.Assert.failNotEquals(Assert.java:834)&#13;
+	at org.junit.Assert.assertEquals(Assert.java:118)&#13;
+	at org.junit.Assert.assertEquals(Assert.java:144)&#13;
+	at pomcumber.TestingClass.i_navigate_to_the_Menu_page(TestingClass.java:42)&#13;
+	at ✽.When I navigate to the 'Menu' page(TeaTesting.feature:8)&#13;
+&#13;
+</failure>
+        </testcase>
+        <testcase name="Then I can browse a list of the available products." classname="Scenario: Browse the items available on the website" time="0.001" ignored="true"/>
+      </testsuite>
+      <testsuite name="Scenario: Add an item to the checkout" time="0.033" incomplete="true">
+        <error>org.openqa.selenium.NoSuchElementException: Unable to locate element: .button\ customStyle
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'STUDENT09', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 64.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:geckodriverVersion: 0.23.0, moz:headless: false, moz:processID: 37152, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 8342f64b-8fce-42ec-8479-78b463740895
+*** Element info: {Using=class name, value=button customStyle}&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)&#13;
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)&#13;
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:405)&#13;
+	at org.openqa.selenium.By$ByClassName.findElement(By.java:391)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)&#13;
+	at pomcumber.TestingClass.i_click_the_checkout_button(TestingClass.java:56)&#13;
+	at ✽.When I click the checkout button(TeaTesting.feature:13)&#13;
+&#13;
+</error>
+        <testcase name="Given the correct web address" classname="Scenario: Add an item to the checkout" time="0.032"/>
+        <testcase name="When I click the checkout button" classname="Scenario: Add an item to the checkout" time="0.001">
+          <error>org.openqa.selenium.NoSuchElementException: Unable to locate element: .button\ customStyle
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'STUDENT09', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 64.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:geckodriverVersion: 0.23.0, moz:headless: false, moz:processID: 37152, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 8342f64b-8fce-42ec-8479-78b463740895
+*** Element info: {Using=class name, value=button customStyle}&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)&#13;
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)&#13;
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:405)&#13;
+	at org.openqa.selenium.By$ByClassName.findElement(By.java:391)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)&#13;
+	at pomcumber.TestingClass.i_click_the_checkout_button(TestingClass.java:56)&#13;
+	at ✽.When I click the checkout button(TeaTesting.feature:13)&#13;
+&#13;
+</error>
+        </testcase>
+        <testcase name="Then I am taken to the checkout page" classname="Scenario: Add an item to the checkout" time="0.004" ignored="true"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

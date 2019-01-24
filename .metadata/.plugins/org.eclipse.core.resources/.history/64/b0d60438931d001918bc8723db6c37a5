@@ -1,0 +1,38 @@
+package test;
+
+import static org.junit.Assert.*;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Ignore;
+import org.junit.Test;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.GeckoDriverService;
+
+public class MainTest {
+	
+	//FirefoxDriver driver;
+	WebDriver driver;
+	@Before
+	public void setup() 
+	{
+		System.setProperty("webdriver.gecko.driver", 
+				"C:/Users/Admin/Downloads/geckodriver-v0.23.0-win64/geckodriver.exe");
+		driver = new FirefoxDriver();
+	}
+	
+	@After
+	public void teardown()
+	{
+		driver.quit();
+	}
+	
+	@Test
+	public void methodTest() throws InterruptedException
+	{
+		driver.manage().window().maximize();
+		driver.get("https://www.thedemosite.co.uk");
+		Thread.sleep(2000);
+	}
+}

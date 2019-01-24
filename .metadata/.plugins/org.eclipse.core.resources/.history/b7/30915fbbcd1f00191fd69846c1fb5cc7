@@ -1,0 +1,9 @@
+package pomcumber;
+
+import org.junit.runner.RunWith;
+
+@RunWith(Cucumber.class)
+@CucumberOptions(features = "classpath:")
+public class StartTest {
+
+}

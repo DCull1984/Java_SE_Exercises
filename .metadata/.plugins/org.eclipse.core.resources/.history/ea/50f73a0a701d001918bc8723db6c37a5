@@ -1,0 +1,15 @@
+package automated;
+
+import static org.junit.Assert.*;
+import org.junit.Test;
+
+import automated.Main;
+
+public class MainTest 
+{
+	@Test
+	public void test()
+	{
+		fail("Fail");
+	}
+}

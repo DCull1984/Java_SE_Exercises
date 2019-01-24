@@ -1,0 +1,30 @@
+package pom;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+public class AddLoginDetail 
+{
+		
+	@FindBy(xpath = "/html/body/div/center/table/tbody/tr[2]/td/div/center/table/tbody/tr/td[2]/p/small/a[3]")
+	private WebElement checkElement;			
+	checkElement.click();
+	
+	@FindBy(xpath = "/html/body/table/tbody/tr/td[1]/form/div/center/table/tbody/tr/td[1]/div/center/table/tbody/tr[1]/td[2]/p/input")
+	private WebElement userName;
+	
+	@FindBy(xpath = "/html/body/table/tbody/tr/td[1]/form/div/center/table/tbody/tr/td[1]/div/center/table/tbody/tr[2]/td[2]/p/input")
+	private WebElement password;
+	
+	@FindBy(xpath = "/html/body/table/tbody/tr/td[1]/form/div/center/table/tbody/tr/td[1]/div/center/table/tbody/tr[3]/td[2]/p/input")
+	private WebElement saveButton; 
+	
+	public void createLogin()
+	{
+		checkElement.click();
+		userName.sendKeys("David");
+		password.sendKeys("Root");
+		saveButton.click();
+	}
+}

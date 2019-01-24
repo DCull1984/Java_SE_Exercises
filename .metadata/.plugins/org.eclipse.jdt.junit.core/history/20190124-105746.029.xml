@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestCaller" project="TheDemoSiteFileRead" tests="4" started="4" failures="0" errors="0" ignored="3">
+  <testsuite name="test.TestCaller" time="17.717">
+    <testcase name="addLogin" classname="test.TestCaller" time="0.0" ignored="true"/>
+    <testcase name="moveToLogin" classname="test.TestCaller" time="0.0" ignored="true"/>
+    <testcase name="loginVerification" classname="test.TestCaller" time="17.716"/>
+    <testcase name="methodTest" classname="test.TestCaller" time="0.001" ignored="true"/>
+  </testsuite>
+</testrun>

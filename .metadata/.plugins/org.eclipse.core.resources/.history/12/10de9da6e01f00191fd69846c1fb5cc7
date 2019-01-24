@@ -1,0 +1,67 @@
+package pomcumber;
+
+import static org.junit.Assert.assertEquals;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Actions;
+
+import cucumber.api.java.Before;
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+public class TestingClass 
+{
+	WebDriver driver;
+	Actions action;
+	
+	@Before
+	public void setup()
+	{	
+		System.setProperty("webdriver.gecko.driver", 
+				"C:\\Users\\Admin\\Downloads\\geckodriver-v0.23.0-win64\\geckodriver.exe");
+		driver = new FirefoxDriver();
+		driver.get(Constants.URL);
+	}
+	
+	@Given("^the correct web address$")
+	public void the_correct_web_address() 
+	{
+		assertEquals("http://www.practiceselenium.com/welcome.html", Constants.URL);
+	}
+
+	@When("^I navigate to the 'Menu' page$")
+	public void i_navigate_to_the_Menu_page() 
+	{
+		WebElement menu = driver.findElement(By.xpath("/html/body/div/div/div[1]/div/div[13]/div/ul/li[3]/a"));
+		menu.click();
+		
+		assertEquals(menu, "http://www.practiceselenium.com/menu.html");
+	}
+
+	@Then("^I can browse a list of the available products\\.$")
+	public void i_can_browse_a_list_of_the_available_products() 
+	{
+		WebElement productInfo = driver.findElement(By.className("txt"));
+		
+		assertEquals(productInfo.isDisplayed(), productInfo);
+	}
+
+	@When("^I click the checkout button$")
+	public void i_click_the_checkout_button()  
+	{
+		WebElement checkout = driver.findElement(By.className("button customStyle"));
+		
+		action.click(checkout).perform();
+	}
+
+	@Then("^I am taken to the checkout page$")
+	public void i_am_taken_to_the_checkout_page()  {
+	    
+	}
+
+
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestBuilder" project="TeaTesting" tests="6" started="6" failures="0" errors="0" ignored="0">
+  <testsuite name="pomcumber.TestBuilder" time="29.245">
+    <testsuite name="Feature: Shopping on a website" time="29.245">
+      <testsuite name="Scenario: Browse the items available on the website" time="11.869">
+        <testcase name="Given the correct web address" classname="Scenario: Browse the items available on the website" time="10.383"/>
+        <testcase name="When I navigate to the 'Menu' page" classname="Scenario: Browse the items available on the website" time="0.006"/>
+        <testcase name="Then I can browse a list of the available products." classname="Scenario: Browse the items available on the website" time="1.48"/>
+      </testsuite>
+      <testsuite name="Scenario: Add an item to the checkout" time="1.762">
+        <testcase name="Given the correct web address" classname="Scenario: Add an item to the checkout" time="0.303"/>
+        <testcase name="When I click the checkout button" classname="Scenario: Add an item to the checkout" time="0.003"/>
+        <testcase name="Then I am taken to the checkout page" classname="Scenario: Add an item to the checkout" time="1.456"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

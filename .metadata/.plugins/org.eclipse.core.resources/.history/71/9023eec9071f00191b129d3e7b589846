@@ -1,0 +1,45 @@
+package pom;
+
+import org.junit.After;
+import org.junit.Before;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Actions;
+
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
+
+
+
+public class TestPage 
+{
+	WebDriver driver;
+	Actions action;
+	ExtentReports report;
+	ExtentTest test;
+	
+	@Before
+	public final void setUp()
+	{
+		System.setProperty("webdriver.gecko.driver", 
+				"C:/Users/Admin/Downloads/geckodriver-v0.23.0-win64/geckodriver.exe");
+		
+		report = new ExtentReports("C:\\Users\\Admin\\eclipse-workspace\\MecureyTours\\Report.html");
+		driver = new FirefoxDriver();
+		action = new Actions(driver);
+		test = report.startTest("Start of Testing");
+		
+		driver.manage().window().maximize();
+		driver.get("http://newtours.demoaut.com/mercurywelcome.php");
+	}
+	
+	@After
+	public void tearDown()
+	{
+		report.endTest(test);
+		report.flush();
+		driver.quit();
+	}
+	
+	@Test
+}

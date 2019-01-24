@@ -14,7 +14,7 @@ import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @Entity
-@Table(name = "TestVehicle")
+@Table(name = "Vehicle")
 @EntityListeners(AuditingEntityListener.class)
 @JsonIgnoreProperties(value = {"creationDate", "lastModified"}, allowGetters = true)
 public class GarageDataModel implements Serializable

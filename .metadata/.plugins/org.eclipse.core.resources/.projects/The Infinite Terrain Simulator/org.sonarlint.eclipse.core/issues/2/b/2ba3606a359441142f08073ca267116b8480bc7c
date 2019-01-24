@@ -1,0 +1,30 @@
+
+psquid:S1226f"EIntroduce a new variable instead of reusing the parameter "playGame".(¥¯—ÀÿÿÿÿÿHRMINORZBUG
+isquid:S18544"<Remove this useless assignment to local variable "playGame".(ı‰·¢H‘RMAJORZ
+CODE_SMELL
+e
+squid:S106`"9Replace this use of System.out or System.err by a logger.(îÏÑÒHŠRMAJORZ
+CODE_SMELL
+nsquid:S1854:"<Remove this useless assignment to local variable "playGame".(¥¯—ÀÿÿÿÿÿH’RMAJORZ
+CODE_SMELL
+psquid:S1226:"EIntroduce a new variable instead of reusing the parameter "playGame".(¥¯—ÀÿÿÿÿÿHRMINORZBUG
+[squid:S1125")Remove the literal "false" boolean value.(š«ïÂıÿÿÿÿH‹RMINORZ
+CODE_SMELL
+xsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(î¤˜´H‰RMAJORZ
+CODE_SMELL
+ksquid:S12264"EIntroduce a new variable instead of reusing the parameter "playGame".(ı‰·¢HRMINORZBUG
+nsquid:S1854f"<Remove this useless assignment to local variable "playGame".(¥¯—ÀÿÿÿÿÿH“RMAJORZ
+CODE_SMELL
+t$squid:AssignmentInSubExpressionCheckk".Extract the assignment out of this expression.(ı‰·¢HˆRMAJORZ
+CODE_SMELL
+isquid:S2589"7Remove this expression which always evaluates to "true"(š«ïÂıÿÿÿÿHŒRMAJORZ
+CODE_SMELL
+y$squid:AssignmentInSubExpressionCheckf".Extract the assignment out of this expression.(¥¯—ÀÿÿÿÿÿH‡RMAJORZ
+CODE_SMELL
+isquid:S1854k"<Remove this useless assignment to local variable "playGame".(ı‰·¢H”RMAJORZ
+CODE_SMELL
+t$squid:AssignmentInSubExpressionCheck4".Extract the assignment out of this expression.(ı‰·¢H…RMAJORZ
+CODE_SMELL
+y$squid:AssignmentInSubExpressionCheck:".Extract the assignment out of this expression.(¥¯—ÀÿÿÿÿÿH†RMAJORZ
+CODE_SMELL
+ksquid:S1226k"EIntroduce a new variable instead of reusing the parameter "playGame".(ı‰·¢HRMINORZBUG

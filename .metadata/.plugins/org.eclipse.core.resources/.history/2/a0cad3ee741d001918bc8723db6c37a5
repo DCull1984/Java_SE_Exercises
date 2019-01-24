@@ -1,0 +1,42 @@
+package automated;
+
+public class Main {
+	
+		public static void main(String[] args) 
+		{
+			System.out.println(blackJack(21, 20));
+		}
+
+		public static int blackJack(int a, int b)
+		{
+			
+			if (a > b)
+			{
+				if (a >= 22)
+				{
+					System.out.println("B wins with : " + b);
+				}
+				System.out.println("A wins with : " + a);
+			}
+			
+			else if (a < b)
+			{
+				if (b >= 22)
+				{
+					System.out.println("A wins with : " + a);
+				}
+				System.out.println("B wins with : " + b);
+			}
+			
+			else if  (a >= 21 && b >= 21)
+			{
+				System.out.println("No one wins this round!");
+			}
+			
+			else
+			{
+				System.out.println("It's a TIE!! Try again");;
+			}
+					
+		}
+}

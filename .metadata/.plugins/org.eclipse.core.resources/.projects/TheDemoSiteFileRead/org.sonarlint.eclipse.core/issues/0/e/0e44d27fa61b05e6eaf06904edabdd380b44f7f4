@@ -1,0 +1,12 @@
+
+„squid:CommentedOutCodeLine:"<This block of commented-out lines of code should be removed.(¨½ðÃúÿÿÿÿ8—µ”Ü‡-HéRMAJORZ
+CODE_SMELL
+†squid:UselessImportCheck"ERemove this unused import 'org.openqa.selenium.interactions.Actions'.(ÅÑÃ8—µ”Ü‡-HêRMINORZ
+CODE_SMELL
+squid:S00116"SRename this field "PASSWORD" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ðÖÙÆûÿÿÿÿ8¡ŸÁÛ‡-HëRMINORZ
+CODE_SMELL
+‰squid:S00116"ORename this field "USER" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ù°½ëøÿÿÿÿ8¡ŸÁÛ‡-HìRMINORZ
+CODE_SMELL
+Ê%squid:RedundantThrowsDeclarationCheck$"wRemove the declaration of thrown exception 'java.lang.InterruptedException', as it cannot be thrown from method's body.(âæÒýýÿÿÿÿ8¡ŸÁÛ‡-HíRMINORZ
+CODE_SMELL
+ysquid:S2095*"JUse try-with-resources or close this "XSSFWorkbook" in a "finally" clause.(ß¨ÿ’8¡ŸÁÛ‡-HîRBLOCKERZBUG

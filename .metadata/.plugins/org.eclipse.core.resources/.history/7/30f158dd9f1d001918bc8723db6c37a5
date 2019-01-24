@@ -1,0 +1,9 @@
+package test;
+
+public class Main 
+{
+	String s = "everyday i'm shuffling";
+	s=character.toString(s.charAt(0)).toUpperCase()+s.substring(1);
+	
+	System.out.println(s);
+}

@@ -1,0 +1,40 @@
+package automated;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class MainTest 
+{
+	@Test
+	public void testBlackJack() 
+	{
+		int result = Main.BlackJack(11, 10);
+		assertEquals(11, result);
+		
+	}
+	
+	@Test
+	public void testBlackJack2() 
+	{
+		int result = Main.BlackJack(10, 10);
+		assertEquals(10, result);
+		
+	}
+	
+	@Test
+	public void testBlackJack3() 
+	{
+		int result = Main.BlackJack(1, 21);
+		assertEquals(21, result);
+		
+	}
+	
+	@Test
+	public void testBlackJack4() 
+	{
+		int result = Main.BlackJack(21, 21);
+		assertEquals(21, result);
+		
+	}
+}

@@ -1,0 +1,31 @@
+
+tsquid:UselessImportCheck
+"3Remove this unused import 'org.openqa.selenium.By'.(ÿŠŞ›8şÒ°İ‡-HÄRMINORZ
+CODE_SMELL
+Œsquid:S00116("RRename this field "LogUser" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶æñøÿÿÿÿ8şÒ°İ‡-HÆRMINORZ
+CODE_SMELL
+Ê%squid:RedundantThrowsDeclarationCheck3"wRemove the declaration of thrown exception 'java.lang.InterruptedException', as it cannot be thrown from method's body.(ûª ùÿÿÿÿ8÷‘Èø‡-HçRMINORZ
+CODE_SMELL
+ˆsquid:S001003"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ûª ùÿÿÿÿ8şÒ°İ‡-HÙRMINORZ
+CODE_SMELL
+‰squid:S00116"ORename this field "USER" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ù°½ëøÿÿÿÿ8şÒ°İ‡-HÁRMINORZ
+CODE_SMELL
+squid:S00116"SRename this field "PASSWORD" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğÖÙÆûÿÿÿÿ8şÒ°İ‡-HÊRMINORZ
+CODE_SMELL
+‡squid:S001161"RRename this field "Success" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÓÈé­8şÒ°İ‡-HÒRMINORZ
+CODE_SMELL
+ˆsquid:S00116+"SRename this field "UserPass" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(û¥€8şÒ°İ‡-HÔRMINORZ
+CODE_SMELL
+Œsquid:S00116%"XRename this field "ChangeToLogin" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(›¼ãM8şÒ°İ‡-HÌRMINORZ
+CODE_SMELL
+ysquid:S2095;"JUse try-with-resources or close this "XSSFWorkbook" in a "finally" clause.(ß¨ÿ’8şÒ°İ‡-HÈRBLOCKERZBUG
+squid:S00116."TRename this field "TestLogin" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(©şíêúÿÿÿÿ8şÒ°İ‡-HĞRMINORZ
+CODE_SMELL
+€squid:UselessImportCheck":Remove this unused import 'java.io.FileNotFoundException'.(·î™ùÿÿÿÿ8şÒ°İ‡-HÎRMINORZ
+CODE_SMELL
+„squid:CommentedOutCodeLineZ"<This block of commented-out lines of code should be removed.(É‚úçûÿÿÿÿ8§æµø‡-HÛRMAJORZ
+CODE_SMELL
+„squid:CommentedOutCodeLineM"<This block of commented-out lines of code should be removed.(¨½ğÃúÿÿÿÿ8›¦Ûø‡-HúRMAJORZ
+CODE_SMELL
+fsquid:S11723"-Remove this unused method parameter "action".(ûª ùÿÿÿÿ8›¦Ûø‡-HûRMAJORZ
+CODE_SMELL

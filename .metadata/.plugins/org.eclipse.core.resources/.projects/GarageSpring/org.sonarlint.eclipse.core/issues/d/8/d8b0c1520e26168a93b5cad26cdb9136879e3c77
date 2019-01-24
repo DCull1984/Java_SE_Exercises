@@ -1,0 +1,7 @@
+
+yjavascript:UnusedVariable"9Remove the declaration of the unused 'userText' variable.(ƒλ¤ύÿÿÿÿHΩRMINORZ
+CODE_SMELL
+rjavascript:S1854";Remove this useless assignment to local variable "userText"(ƒλ¤ύÿÿÿÿHΪRMAJORZ
+CODE_SMELL
+–javascript:S2703"]Add the "let", "const" or "var" keyword to this declaration of "vehicle" to make it explicit.(©δλόÿÿÿÿHΫRBLOCKERZ
+CODE_SMELL

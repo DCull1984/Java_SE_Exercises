@@ -1,0 +1,28 @@
+package automated;
+
+import static org.junit.Assert.*;
+import org.junit.Test;
+
+import automated.Main;
+
+public class MainTest 
+{
+	@Test
+	public void test()
+	{
+		fail("Fail");
+	}
+	
+	@Test
+	public void aWin()
+	{
+		if (a > b)
+		{
+			if (a >= 22)
+			{
+				assertEquals("a Loss", b);
+			}
+			assertEquals("A wins", a);
+		}
+	}
+}

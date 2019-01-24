@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;javaConditional&apos; to &apos;conditional.example&apos;&#x0D;&#x0A;- Original project: &apos;Java Exercise 1.6&apos;&#x0D;&#x0A;- Original element: &apos;Java Exercise 1.6/src/javaConditional&apos;&#x0D;&#x0A;- Renamed element: &apos;Java Exercise 1.6/src/conditional.example&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;javaConditional&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;javaConditional" name="conditional.example" qualified="false" references="true" stamp="1546958365050" textual="false" version="1.0"/>
+</session>

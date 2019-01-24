@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;javaHelloMethod&apos; to &apos;hello.method&apos;&#x0D;&#x0A;- Original project: &apos;Java Exercise 1.2&apos;&#x0D;&#x0A;- Original element: &apos;Java Exercise 1.2/src/javaHelloMethod&apos;&#x0D;&#x0A;- Renamed element: &apos;Java Exercise 1.2/src/hello.method&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;javaHelloMethod&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;javaHelloMethod" name="hello.method" qualified="false" references="true" stamp="1546958160509" textual="false" version="1.0"/>
+</session>

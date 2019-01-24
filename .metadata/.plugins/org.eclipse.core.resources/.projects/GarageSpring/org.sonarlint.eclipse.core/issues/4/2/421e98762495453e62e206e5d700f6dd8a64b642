@@ -1,0 +1,15 @@
+
+rsquid:S4684>"@Replace this persistent entity with a simple POJO or DTO object.(£‘†0HÑRCRITICALZVULNERABILITY
+squid:S4488^"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(Óäüêüÿÿÿÿ8Å’â††-HÒRMINORZ
+CODE_SMELL
+”squid:S1488I"bImmediately return this expression instead of assigning it to the temporary variable "updateData".(ßÊß²üÿÿÿÿHÓRMINORZ
+CODE_SMELL
+‡squid:S00101["MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ì¸¦÷úÿÿÿÿ8Å’â††-HÔRMINORZ
+CODE_SMELL
+squid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ãŠØ ıÿÿÿÿHÕRMINORZ
+CODE_SMELL
+[squid:S1452P"&Remove usage of generic wildcard type.(ÆÈ«€üÿÿÿÿHÖRCRITICALZ
+CODE_SMELL
+}squid:CommentedOutCodeLined"<This block of commented-out lines of code should be removed.(ÒÌâ–øÿÿÿÿH×RMAJORZ
+CODE_SMELL
+xsquid:S4684!"@Replace this persistent entity with a simple POJO or DTO object.(ñşéŞùÿÿÿÿHØRCRITICALZVULNERABILITY

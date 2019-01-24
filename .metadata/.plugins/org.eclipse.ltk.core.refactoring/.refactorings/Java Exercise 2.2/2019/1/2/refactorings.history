@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;javaUnique&apos; to &apos;unique.example&apos;&#x0D;&#x0A;- Original project: &apos;Java Exercise 2.2&apos;&#x0D;&#x0A;- Original element: &apos;Java Exercise 2.2/src/javaUnique&apos;&#x0D;&#x0A;- Renamed element: &apos;Java Exercise 2.2/src/unique.example&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;javaUnique&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;javaUnique" name="unique.example" qualified="false" references="true" stamp="1546959610896" textual="false" version="1.0"/>
+</session>
