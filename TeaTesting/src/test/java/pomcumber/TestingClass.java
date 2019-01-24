@@ -6,9 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.interactions.Actions;
 
-import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
@@ -31,8 +29,7 @@ public class TestingClass
 				"C:\\Users\\Admin\\Downloads\\geckodriver-v0.23.0-win64\\geckodriver.exe");
 		driver = new FirefoxDriver();
 		driver.manage().window().maximize();
-		
-		//report = new ExtentReports(Constants.filePath + Constants.fileName, true);
+				
 		test = TestBuilder.report.startTest("PomCumber Testing");
 		
 	}
@@ -41,7 +38,6 @@ public class TestingClass
 	public void the_correct_web_address() 
 	{	
 		driver.get(Constants.HOME);
-//		String myString = driver.getCurrentUrl();
 	}
 
 	@When("^I navigate to the 'Menu' page$")
@@ -78,7 +74,6 @@ public class TestingClass
 	public void teardown()
 	{		
 		driver.close();
-		//driver.quit();
 	}
 
 }
